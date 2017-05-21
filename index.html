@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+    <script src="object.js"></script>
+</head>
+<body>
+<script>
+    var obj = new MyString('hello');
+      console.log(obj.length);
+      console.log(obj._value);
+      console.log(obj[0]);
+      console.log('obj.valueOf()',obj.valueOf());
+      console.log('obj.toString()',obj.toString());
+      console.log('obj.chartAt(1)',obj.chartAt(1));
+      console.log('obj.chartAt(2)',obj.chartAt(2));
+      console.log('obj.chartAt(e)',obj.chartAt('e'));
+      console.log('obj.concat()',obj.concat('world!'));
+      console.log('obj.slice(undefined)',obj.slice());
+      console.log('obj.slice(>this.length)',obj.slice(7));
+      console.log('obj.slice(< 0)',obj.slice(-1));
+      console.log('obj.slice(to of undefined)',obj.slice(1));
+      console.log('obj.slice(0,-1)',obj.slice(0,-1));
+      console.log('obj.slice(0,8)',obj.slice(0,8));
+      console.log('obj.slice(e)',obj.split('e'));
+      console.log('obj.slice(l)',obj.split('l'));
+</script>
+</body>
+</html>
